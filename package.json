@@ -1,0 +1,26 @@
+{
+  "name": "kenzy-bot",
+  "version": "1.0.0",
+  "description": "kenzy bot is learning bot",
+  "keywords": [
+    "bot",
+    "kenbot",
+    "telegram",
+    "bot"
+  ],
+  "license": "ISC",
+  "author": "Little Kenzy",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
