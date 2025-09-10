@@ -37,5 +37,5 @@ Project ini dibangun menggunakan **Node.js** dengan integrasi API Telegram, sehi
 4. Jalankan bot
 
    ```bash
-   npm run dev
+   node main.js
    ```
