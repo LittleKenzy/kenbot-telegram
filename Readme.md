@@ -1,6 +1,6 @@
 ### Deskripsi
 
-**Kenzy Telegram Bot** adalah bot Telegram yang dibuat untuk membantu berbagai kebutuhan otomatisasi Chat di Telegram.
+**Kenzy Telegram Bot** adalah bot Telegram yang dibuat untuk membantu berbagai kebutuhan Otomatisasi Chat di Telegram.
 Project ini dibangun menggunakan **Node.js** dengan integrasi API Telegram, sehingga bisa dikembangkan lebih lanjut sesuai kebutuhan.
 
 ### Fitur Utama
