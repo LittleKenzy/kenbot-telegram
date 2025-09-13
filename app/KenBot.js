@@ -60,7 +60,7 @@ class KenBot extends TelegramBot {
     getnews() {
         this.onText(commands.news, async (msg) => {
             const newsEndpoint = 'https://jakpost.vercel.app/api/category/indonesia'
-            this.sendMessage(msg.from.id, 'Sedang mengambil berita terbaru...');
+            this.sendMessage(msg.from.id, 'Sedang mengambil berita terbaru. Mohon tunggu sebentar...');
             try {
                 const apiCall = await fetch(newsEndpoint);
                 const response = await apiCall.json();
