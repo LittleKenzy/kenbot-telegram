@@ -8,7 +8,24 @@ class KenBot extends TelegramBot {
         this.on('message', (msg) => {
             const isInCommands = Object.values(commands).some(keyword => keyword.test(msg.text));
             if (!isInCommands) {
-                this.sendMessage(msg.from.id, invalidCommand);
+                this.sendMessage(msg.from.id, invalidCommand, {
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: 'Panduan Pengguna',
+                                    callback_data: 'go_to_help'
+                                }
+                            ]
+                        ]
+                    }
+                });
+            }
+        })
+        this.on('callback_query', (callbackQuery) => {
+            const callbackName = callbackQuery.data
+            if(callbackName == 'go_to_help'){
+                this.sendMessage(callbackQuery.from.id, helpText);
             }
         })
     }
